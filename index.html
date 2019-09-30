@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sparclean</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Grand+Hotel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header animated fadeInDown">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navigation d-flex justify-content-between menu">
+                        <a href="index.html" class="logo f52 animated fadeInDown">Sparclean</a>
+                        <ul class="navigation-list flex-wrap">
+                            <li class="navigation-list__item animated fadeInDown">
+                                <a href="#service-price"
+                                    class="navigation-list__item__link transform-uppercase fw500 f15">Services & Pricing
+                                </a>
+                            </li>
+                            <li class="navigation-list__item animated fadeInDown">
+                                <a href="#locations"
+                                    class="navigation-list__item__link transform-uppercase fw500 f15">Locations</a>
+                            </li>
+                            <li class="navigation-list__item animated fadeInDown">
+                                <a href="#faq" class="navigation-list__item__link transform-uppercase fw500 f15">FAQ</a>
+                            </li>
+                            <li class="navigation-list__item animated fadeInDown">
+                                <a href="#builders"
+                                    class="navigation-list__item__link transform-uppercase fw500 f15">Builders cleans
+                                </a>
+                            </li>
+                            <li class="navigation-list__item animated fadeInDown">
+                                <a href="#contact"
+                                    class="navigation-list__item__link transform-uppercase fw500 f15">Contact</a>
+                            </li>
+                        </ul>
+                        <a href="#calculator" class="book-now transform-uppercase fw500 f15 text-center animated fadeInDown">Book
+                            now</a>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="heading">
+        <div class="container">
+            <div class="row justify-content-center animated fadeInLeft" id="service-price">
+                <div class="col-lg-8 col-md-8">
+                    <h1>Services & Pricing</h1>
+                    <p class="text-center">We offer simple pricing based on an hourly rate. We always provide an
+                        obligation-free in-person visit
+                        so you will always get an accurate price. No surprises</p>
+                </div>
+            </div>
+            <div class="row justify-content-center animated fadeInRight">
+                <div class="col-lg-10">
+                    <div class="prices d-flex justify-content-around flex-wrap">
+                        <div class="price-block text-center">
+                            <span class="price-type fw500">Recurring</span>
+                            <span class="price-service">$33</span>
+                            <span class="price-per fw500 transform-uppercase">per hour</span>
+                        </div>
+                        <div class="price-block text-center">
+                            <span class="price-type fw500">One-Off Cleaning</span>
+                            <span class="price-service">$40</span>
+                            <span class="price-per fw500 transform-uppercase">per hour</span>
+                        </div>
+                        <div class="price-block text-center">
+                            <span class="price-type fw500">Single Oven Cleaning</span>
+                            <span class="price-service">$55</span>
+                            <span class="price-per fw500 transform-uppercase">per oven</span>
+                        </div>
+                        <div class="price-block text-center">
+                            <span class="price-type fw500">Double Oven Cleaning</span>
+                            <span class="price-service">$70</span>
+                            <span class="price-per fw500 transform-uppercase">per oven</span>
+                        </div>
+                        <div class="price-block text-center">
+                            <span class="price-type fw500">Laundry Wash & Dry</span>
+                            <span class="price-service">$40</span>
+                            <span class="price-per fw500 transform-uppercase">per basket</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="price-estimator">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-8" id="locations">
+                    <h2 class="animated fadeInLeft">Price Estimator</h2>
+                    <p class="text-center animated fadeInUp fadeInDown">Select the number of bedrooms, bathrooms, and
+                        home condidtion to see your estimated price. From here,
+                        booking is simple and only takes 60 seconds</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form id="calculator" class="d-flex justify-content-around calculator-from flex-wrap animated fadeInDown"
+                          name="calculator">
+                        <div class="col-lg-8 calculator-options animated fadeInRight">
+                            <div class="row align-items-center margin-bottom-15 ">
+                                <label class="f20 label">Bedrooms</label>
+                                <input data-name="bedroom" type="button" class="f20 text-center btn-calculator fw500 active" value="1">
+                                <input data-name="bedroom" type="button" class="f20 text-center btn-calculator fw500" value="2">
+                                <input data-name="bedroom" type="button" class="f20 text-center btn-calculator fw500" value="3">
+                                <input data-name="bedroom" type="button" class="f20 text-center btn-calculator fw500" value="4">
+                                <input data-name="bedroom" type="button" class="f20 text-center btn-calculator fw500" value="5">
+                                <input data-name="bedroom" type="button" class="f20 text-center btn-calculator fw500" value="6">
+                            </div>
+                            <div class="row align-items-center margin-bottom-15">
+                                <label class="f20 label">Bathrooms</label>
+                                <input data-name="bathroom" type="button" class="f20 text-center btn-calculator fw500 active" value="1">
+                                <input data-name="bathroom" type="button" class="f20 text-center btn-calculator fw500" value="2">
+                                <input data-name="bathroom" type="button" class="f20 text-center btn-calculator fw500" value="3">
+                                <input data-name="bathroom" type="button" class="f20 text-center btn-calculator fw500" value="4">
+                                <input data-name="bathroom" type="button" class="f20 text-center btn-calculator fw500" value="5">
+                                <input data-name="bathroom" type="button" class="f20 text-center btn-calculator fw500" value="6">
+                            </div>
+                            <div class="row align-items-center margin-bottom-15">
+                                <label class="f20 label">Home condition</label>
+                                <div data-name="condition" data-value="slight" class="f14 text-center btn-calculator fw500 active btn-calculator-longer">Slight
+                                    markings or dirt
+                                </div>
+                                <div data-name="condition" data-value="moderate" class="f14 text-center btn-calculator btn-calculator-longer fw500">Moderate Making
+                                    or dirt
+                                </div>
+                                <div data-name="condition" data-value="heavy" class="f14 text-center btn-calculator  btn-calculator-longer fw500">Heavy markings
+                                    or dirt
+                                </div>
+                            </div>
+                            <div class="row align-items-center margin-bottom-15">
+                                <label class="f20 label">Clean Type</label>
+                                <div data-name="clean-type" data-value="recurring" class="f14 text-center btn-calculator fw500 active btn-calculator-longer">Recurring
+                                </div>
+                                <div data-name="clean-type" data-value="one-off" class="f14 text-center btn-calculator btn-calculator-longer fw500">One-Off</div>
+                                <div data-name="clean-type" data-value="end-of-lease" class="f14 text-center btn-calculator  btn-calculator-longer fw500">End of Lease</div>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-4 col-md-6 col-sm-9 calculator-result">
+                            <span class="f20 fw500 cost">Quick Cost Estimate</span>
+                            <span class="f20 fw500 hours">3 hours</span>
+                            <span class="f65 price">$40</span>
+                            <input type="submit" class="f15 fw600 book transform-uppercase"
+                                   value="Book my cleaning">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="slider animated fadeInDownBig">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-8">
+                    <h3 class="text-center">Lorem ipsum</h3>
+                    <p class="text-center">Book professional home cleaners and handymen at a moments notice. Just pick a
+                        time and well do the rest.</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-12 col-md-12">
+                    <div class="slider-owl owl-theme">
+                        <div class="owl-carousel">
+                            <div class="item">
+                                <h4 class="fw500 text-left">1 Hour free</h4>
+                                <span class="fw500 f18 span-info">of heavy markings or dirt</span>
+                                <p class="f16 f400">Book online in 60 seconds and schedule your home service for as
+                                    early as tomorrow.</p>
+                                <span>Use code: 12GKUG</span>
+                            </div>
+
+                            <div class="item">
+                                <h4 class="fw500 text-left span-eight-hour">$270</h4>
+                                <span class="fw500 f18 span-info">for 8 hour one off clean</span>
+                                <p class="f16 f400">Book online in 60 seconds and schedule your home service for as
+                                    early as tomorrow.</p>
+                                <span>Use code: Springclean</span>
+                            </div>
+
+                            <div class="item">
+                                <h4 class="fw500 text-left">30% discount </h4>
+                                <span class="fw500 f18 span-info">for bathrooms</span>
+                                <p class="f16 f400">Book online in 60 seconds and schedule your home service for as
+                                    early as tomorrow.</p>
+                                <span>Use code: Springclean</span>
+                            </div>
+
+                            <div class="item">
+                                <h4 class="fw500 text-left">1 Hour free</h4>
+                                <span class="fw500 f18 span-info">of heavy markings or dirt</span>
+                                <p class="f16 f400">Book online in 60 seconds and schedule your home service for as
+                                    early as tomorrow.</p>
+                                <span>Use code: 12GKUG</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cleaning">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="tb-cnt">
+                            <table class="table table-responsive w-100 d-block d-md-table table-borderless">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col" class="text-center">Routine cleaning</th>
+                                        <th scope="col" class="text-center">Deep clean</th>
+                                        <th scope="col" class="text-center">End-of-Lease</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="border-bottom: 1px solid #bbc1cd;">
+                                        <th scope="row" class="text-left th-title title-first f16">Vacuum Carpets</th>
+                                        <th scope="row" class="text-center"><i class="fas fa-check f-check"></i></th>
+                                        <th scope="row" class="text-center"><i class="fas fa-check f-check"></i></th>
+                                        <th scope="row" class="text-center"><i class="fas fa-check f-check"></i></th>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid #bbc1cd;">
+                                        <th scope="row" class="th-title f16 title-first">Dusting</th>
+                                        <th scope="row" class="text-center"><i class="fas fa-check f-check"></i></th>
+                                        <th scope="row" class="text-center"><i class="fas fa-check f-check"></i></th>
+                                        <th scope="row" class="text-center"><i class="fas fa-check f-check"></i></th>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid #bbc1cd;">
+                                        <th scope="row" class="th-title f16 title-first">Sweet and Mop Floors</th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid #bbc1cd;">
+                                        <th scope="row" class="th-title f16 title-first">Clean Mirrors</th>
+                                        <th scope="row" class="text-center"><i class="fas fa-check f-check"></i></th>
+                                        <th scope="row" class="text-center"><i class="fas fa-check f-check"></i>
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid #bbc1cd;">
+                                        <th scope="row" class="th-title f16 title-first">Empty Bins</th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid #bbc1cd;">
+                                        <th scope="row" class="th-title f16 title-first">Baseboord Detail</th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-times f-close close-ic"></i>
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid #bbc1cd;">
+                                        <th scope="row" class="th-title f16 title-first">Detail Doors / Droo Frames</th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-times f-close close-ic"></i>
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid #bbc1cd;">
+                                        <th scope="row" class="th-title f16 title-first"> Detail Tiled floor & Grout
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-times f-close close-ic"></i>
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid #bbc1cd;">
+                                        <th scope="row" class="th-title f16 title-first">Cobweb removal</th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="th-title f16 title-first">Window Tracks</th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="tb-cnt">
+                            <table class="table table-responsive w-100 d-block d-md-table table-borderless">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col" class="text-center">Routine cleaning</th>
+                                        <th scope="col" class="text-center">Deep clean</th>
+                                        <th scope="col" class="text-center">End-of-Lease</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                    <tr style="border-bottom: 1px solid #bbc1cd;">
+                                        <th scope="row" class="text-left th-title title-first f16">Clean Countertops</th>
+                                        <th scope="row" class="text-center"><i class="fas fa-check f-check"></i></th>
+                                        <th scope="row" class="text-center"><i class="fas fa-check f-check"></i></th>
+                                        <th scope="row" class="text-center"><i class="fas fa-check f-check"></i></th>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid #bbc1cd;">
+                                        <th scope="row" class="th-title f16 title-first">Dust Cabinet Doors</th>
+                                        <th scope="row" class="text-center"><i class="fas fa-check f-check"></i></th>
+                                        <th scope="row" class="text-center"><i class="fas fa-check f-check"></i></th>
+                                        <th scope="row" class="text-center"><i class="fas fa-check f-check"></i></th>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid #bbc1cd;">
+                                        <th scope="row" class="th-title f16 title-first">Vacuum Area Rugs</th>
+                                        <th scope="row" class="text-center">
+                                            <span class="check-ic"><i class="fas fa-check f-check"></i></span>
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid #bbc1cd;">
+                                        <th scope="row" class="th-title f16 title-first">Inside cabinates and draws</th>
+                                        <th scope="row" class="text-center"><i class="fas fa-check f-check"></i></th>
+                                        <th scope="row" class="text-center"><i class="fas fa-check f-check"></i></th>
+                                        <th scope="row" class="text-center"><i class="fas fa-check f-check"></i></th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="th-title f16 title-first">Inside cabinates and draws</th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="tb-cnt">
+                            <table class="table table-responsive w-100 d-block d-md-table table-borderless">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col" class="text-center">Routine cleaning</th>
+                                        <th scope="col" class="text-center">Deep clean</th>
+                                        <th scope="col" class="text-center">End-of-Lease</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                    <tr style="border-bottom: 1px solid #bbc1cd;">
+                                        <th scope="row" class="text-left th-title title-first f16">Scrub kitchen sinks & splash back</th>
+                                        <th scope="row" class="text-center"><i class="fas fa-check f-check"></i></th>
+                                        <th scope="row" class="text-center"><i class="fas fa-check f-check"></i></th>
+                                        <th scope="row" class="text-center"><i class="fas fa-check f-check"></i></th>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid #bbc1cd;">
+                                        <th scope="row" class="th-title f16 title-first">Stove top and wipe overhead fan</th>
+                                        <th scope="row" class="text-center"><i class="fas fa-check f-check"></i></th>
+                                        <th scope="row" class="text-center"><i class="fas fa-check f-check"></i></th>
+                                        <th scope="row" class="text-center"><i class="fas fa-check f-check"></i></th>
+                                    </tr>
+
+                                    <tr style="border-bottom: 1px solid #bbc1cd;">
+                                        <th scope="row" class="th-title f16 title-first">Wipe splashback and tiles</th>
+                                        <th scope="row" class="text-center"><i class="fas fa-check f-check"></i></th>
+                                        <th scope="row" class="text-center"><i class="fas fa-check f-check"></i>
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid #bbc1cd;">
+                                        <th scope="row" class="th-title f16 title-first">Wipe large kitchen appliance</th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid #bbc1cd;">
+                                        <th scope="row" class="th-title f16 title-first">Clean microwaves</th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid #bbc1cd;">
+                                        <th scope="row" class="th-title f16 title-first">Counter top appliances</th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-times f-close close-ic"></i>
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                    </tr>
+    
+
+                                    <tr style="border-bottom: 1px solid #bbc1cd;">
+                                        <th scope="row" class="th-title f16 title-first"> Fill and run dishwasher</th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                    </tr>
+
+                                    <tr style="border-bottom: 1px solid #bbc1cd;">
+                                        <th scope="row" class="th-title f16 title-first">Wipe laundr appliances
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                    </tr>
+
+                                    <tr style="border-bottom: 1px solid #bbc1cd;">
+                                        <th scope="row" class="th-title f16 title-first">Detail stobe top and overhead fan
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row" class="th-title f16 title-first">Detail tiles and sink
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                        <th scope="row" class="text-center">
+                                            <i class="fas fa-check f-check"></i>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="what-get" id="builders">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-8">
+                    <h2 class="animated fadeInLeft">Heres what you get!</h2>
+                    <p class="text-center animated fadeInRight">Our house cleaners will spend as much time as it takes
+                        to get your home
+                        looking as good as new. Have
+                        a look below to see what's included:</p>
+                </div>
+            </div>
+            <div class="what-get-advantage">
+                <div class="row d-flex align-items-center">
+                    <div class="offset-lg-1 col-lg-4 animated fadeInUp">
+                        <h5>Bedroom, living room and all common areas</h5>
+                        <ul>
+                            <li class="f400 f16">
+                                <i class="fas fa-check f-check"></i>Empty bins</li>
+                            <li class="f400 f16">
+                                <i class="fas fa-check f-check"></i>Vacuum and mop all floors</li>
+                            <li class="f400 f16">
+                                <i class="fas fa-check f-check"></i>Dust & wipe down all surfaces</li>
+                            <li class="f400 f16">
+                                <i class="fas fa-check f-check"></i>Clean cobwebs</li>
+                            <li class="f400 f16">
+                                <i class="fas fa-check f-check"></i>Clean light switches and doorknobs
+                            </li>
+                            <li class="f400 f16">
+                                <i class="fas fa-check f-check"></i>Dust furniture</li>
+                            <li class="f400 f16">
+                                <i class="fas fa-check f-check"></i>Clean window ledges</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-7 animated fadeInRight">
+                        <img class="img-fluid what-get-advantage__img" src="img/bedroom.jpg" alt="Bedroom">
+                    </div>
+                </div>
+            </div>
+
+            <div class="what-get-advantage">
+                <div class="row d-flex align-items-center reverse-mb">
+                    <div class="col-lg-7 animated fadeInDown">
+                        <img class="img-fluid what-get-advantage__img" src="img/bathrooms.jpg" alt="bathrooms">
+                    </div>
+                    <div class="col-lg-4 animated fadeInRight">
+                        <h5>Bathrooms</h5>
+                        <ul>
+                            <li class="f400 f16">
+                                <i class="fas fa-check f-check"></i>Clean all Surfaces</li>
+                            <li class="f400 f16">
+                                <i class="fas fa-check f-check"></i>Scrub toilets</li>
+                            <li class="f400 f16">
+                                <i class="fas fa-check f-check"></i>Clean outside of cabinets and deawers
+                            </li>
+                            <li class="f400 f16">
+                                <i class="fas fa-check f-check"></i>Clean sinks</li>
+                            <li class="f400 f16">
+                                <i class="fas fa-check f-check"></i>Rinse and wipe bathubs</li>
+                            <li class="f400 f16">
+                                <i class="fas fa-check f-check"></i>Clean mirror</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="what-get-advantage">
+                <div class="row d-flex align-items-center">
+                    <div class="offset-lg-1 col-lg-4 animated fadeInUp">
+                        <h5>Kitchens</h5>
+                        <ul>
+                            <li class="f400 f16">
+                                <i class="fas fa-check f-check"></i>Wet wipe outside of fridge</li>
+                            <li class="f400 f16">
+                                <i class="fas fa-check f-check"></i>Clean all surfaces</li>
+                            <li class="f400 f16">
+                                <i class="fas fa-check f-check"></i>Wipe down outside of appliances
+                            </li>
+                            <li class="f400 f16">
+                                <i class="fas fa-check f-check"></i>Clean sink</li>
+                            <li class="f400 f16">
+                                <i class="fas fa-check f-check"></i>Clean stove</li>
+                            <li class="f400 f16">
+                                <i class="fas fa-check f-check"></i>Wipe down outside of oven</li>
+                            <li class="f400 f16">
+                                <i class="fas fa-check f-check"></i>Clean outside of cabinets and drawers
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-7 animated fadeInRight">
+                        <img class="img-fluid what-get-advantage__img" src="img/kitchens.jpg" alt="kitchens">
+                    </div>
+                </div>
+            </div>
+
+            <div class="what-get-advantage">
+                <div class="row d-flex align-items-center reverse-mb">
+                    <div class="col-lg-7 animated fadeInUp">
+                        <img class="img-fluid what-get-advantage__img" src="img/optional-ex.jpg" alt="optional-ex">
+                    </div>
+                    <div class="col-lg-4 animated fadeInUp">
+                        <h5>Optional extras</h5>
+                        <ul>
+                            <li class="f400 f16">
+                                <i class="fas fa-times f-close"></i>End of lease&Move out/in available on checkout</li>
+                            <li class="f400 f16">
+                                <i class="fas fa-times f-close"></i>Deep Cleaning</li>
+                            <li class="f400 f16">
+                                <i class="fas fa-times f-close"></i>Inside Cabinets</li>
+                            <li class="f400 f16">
+                                <i class="fas fa-times f-close"></i>Inside Oven</li>
+                            <li class="f400 f16">
+                                <i class="fas fa-times f-close"></i>Interior Windows</li>
+                            <li class="f400 f16">
+                                <i class="fas fa-times f-close"></i>Washing Dishes</li>
+                            <li class="f400 f16">
+                                <i class="fas fa-times f-close"></i>Skirting Boards</li>
+                            <li class="f400 f16">
+                                <i class="fas fa-times f-close"></i>Blinds</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-types-cleaning" id="faq">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-lg-3 animated fadeInLeft">
+                    <h6 class="d-flex align-items-center">
+                        <img class="our-types-cleaning__info__img" src="icon/info-icon.png" alt="info-icon">Services
+                        exclusion
+                    </h6>
+                </div>
+                <div class="col-lg-9 animated fadeInRight">
+                    <p class="f16">Chandeliers, Light Bulbs, Bio-hazards(Mold, etc..), Hoarding, Animal Waste, High
+                        Reach Areas(More than
+                        2 step ladder), Putting away dishes, Exterior Windows.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="book-clean animated fadeInUp">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-6">
+                    <h4 class="text-left">Read to book?</h4>
+                    <p>Book professional home cleaners and handymen at a moments notice. Just pick a time and well do
+                        the rest.</p>
+                </div>
+                <div class="col-lg-3">
+                    <a class="text-center book-clean__btn transform-uppercase" href="">Book a clean</a>
+                </div>
+                <div class="col-lg-3">
+                    <a class="text-center book-clean__btn btn-light transform-uppercase" href="#">See services</a>
+                </div>
+            </div>
+            <hr class="hr">
+        </div>
+    </section>
+
+    <div class="footer animated fadeInLeft">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-12 col-sm-12">
+                    <div class="footer-list footer-list-mobile">
+                        <p class="footer-list-item">
+                            <a href="index.html" class="footer-list-item__logo f52">Sparclean</a>
+                        </p>
+                        <p class="f16 fw400">Donec nec diam convallis, accumsan nunc eu, interdum leo. Donec commodo
+                            quam quis nisi hendrerit</p>
+                        <p class="created f15">Created by</p>
+                        <a href="https://evnedev.com/" class="brand" target="_blank"><img class="img-fluid" src="img/brand.png" alt="Evne"></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                    <ul class="footer-list margin-top-15" id="contact">
+                        <li class="d-flex">
+                            <i class="fas fa-home icon"></i>
+                            <a href="https://goo.gl/maps/1jamVrUpLXz3ZRRNA" target="_blank" class="adress f15 fw500">Unit 5, 113 Industrial Road Oak Flats NSW 2529 PO BOX 351 Albion Park,
+                                2527
+                            </a>
+                        </li>
+                        <li class="d-flex lign-items-center">
+                            <i class="fas fa-phone icon f18"></i>
+                            <p>
+                                <a class="d-block f15 fw500" href="tel:0424373421">0424 373 421</a>
+                                <a class="d-block f15 fw500" href="tel:0467323979">0467 323 979</a>
+                            </p>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="fas fa-at icon f18"></i>
+                            <p>
+                                <a class="d-block f15 fw500" href="mailto:hello@sparclean.com.au">hello@sparclean.com.au</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-12 ">
+                    <ul class="navigation-list menu">
+                        <li class="navigation-list__item">
+                            <a href="#service-price" class="navigation-list__item__link transform-uppercase fw500 f15">Services &
+                                Pricing
+                            </a>
+                        </li>
+                        <li class="navigation-list__item">
+                            <a href="#locations" class="navigation-list__item__link transform-uppercase fw500 f15">Locations</a>
+                        </li>
+                        <li class="navigation-list__item">
+                            <a href="#faq" class="navigation-list__item__link transform-uppercase fw500 f15">FAQ</a>
+                        </li>
+                        <li class="navigation-list__item">
+                            <a href="#builders" class="navigation-list__item__link transform-uppercase fw500 f15">Builders cleans
+                            </a>
+                        </li>
+                        <li class="navigation-list__item">
+                            <a href="#contact" class="navigation-list__item__link transform-uppercase fw500 f15">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-sm-12 ">
+                    <ul class="available">
+                        <li class="f15 fw600"><i class="fas fa-map-marker-alt icon ic-markes f18"></i>Available here:</li>
+                        <li class="f15">Shellharbour</li>
+                        <li class="f15">Wollongong</li>
+                        <li class="f15">Kiama</li>
+                        <li class="f15"><a href="#" class="more">See more</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-lg-4 col-lg-7">
+                    <div class="copyright d-flex justify-content-between flex-wrap">
+                        <a class="d-block f15" href="#">© 2016 Sparclean Services.</a>
+                        <a class="d-block f15" href="#">Terms & Conditions</a>
+                        <a class="d-block f15" href="#">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="button-up"><i class="fas fa-angle-up"></i></div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
